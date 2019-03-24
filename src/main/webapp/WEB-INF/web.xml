@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+
+<web-app>
+
+	<servlet>
+		<servlet-name>tokenGenerator</servlet-name>
+		<servlet-class>com.test.token.system.controller.TokenGenerator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tokenGenerator</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>getCounterQueue</servlet-name>
+		<servlet-class>com.test.token.system.controller.CounterQueue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getCounterQueue</servlet-name>
+		<url-pattern>/getCounterQueue</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewCounterDetails</servlet-name>
+		<servlet-class>com.test.token.system.controller.ViewCounterDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewCounterDetails</servlet-name>
+		<url-pattern>/ViewCounterDetails</url-pattern>
+	</servlet-mapping>
+	
+	   <servlet>
+    <servlet-name>editTokenStatus</servlet-name>
+    <servlet-class>com.test.token.system.controller.EditTokenStatus</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editTokenStatus</servlet-name>
+    <url-pattern>/editTokenStatus</url-pattern>
+  </servlet-mapping>
+
+
+	
+</web-app>
